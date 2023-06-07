@@ -12,7 +12,7 @@ body {
 
 .portada-img {
   width: 100%;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 43px);
 }
 
 .title {
