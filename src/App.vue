@@ -1,13 +1,5 @@
-<script setup>
-
-// import HelloWorld from './components/HelloWorld.vue'
-// import axios from 'axios';
-import logo from './assets/vue.svg';
-
-</script>
 <style>
 body {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,16 +8,11 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-
-
 }
 
-img {
-  display: block;
-  margin: auto;
-  width: 45%;
-  margin-top: 30px;
-
+.portada-img {
+  width: 100%;
+  height: calc(100vh - 45px);
 }
 
 .title {
@@ -103,9 +90,7 @@ footer {
 
   <main>
     <div>
-      <img src="./assets/lol.jpg" alt="">
-
-
+      <img class="portada-img" src="./assets/lol.jpg" alt="">
 
       <div>
         <h1 class="title">¿QUÉ ES LEAGUE OF LEGENDS?</h1>
@@ -159,7 +144,7 @@ footer {
           el mundo de la grieta del invocador.</h1>
       </div>
 
-      <div class="texto">
+      <ul class="texto">
         <li> 1-Prueba diferentes campeones. </li>
         <li> 2-Conoce los roles y arquetipos.</li>
         <li> 3-Mira siempre el mapa.</li>
@@ -171,32 +156,16 @@ footer {
         <li> 9-No insultar a tus compañeros XD.</li>
         <li> 10-Estar atento al minimapa.</li>
         <li> 11-Nunca te rindas :D.</li>
+      </ul>
+    </div>
 
+    <footer>
+      <div class="container mx-auto flex justify-between items-center py-1">
+
+        <ul class="flex">
+          <li><a href="https://www.xnxx.com" target="_blank" class="text-white font-bold py-2 px-4">No tocar</a></li>
+        </ul>
       </div>
-    </div>
-
-
-    <div>
-      <footer>
-        <div class="container mx-auto flex justify-between items-center py-1">
-
-          <ul class="flex">
-
-            <li><a href="https://www.xnxx.com" target="_blank" class="text-white font-bold py-2 px-4">No tocar</a></li>
-
-          </ul>
-
-        </div>
-
-
-      </footer>
-    </div>
-
-
-
+    </footer>
   </main>
 </template>
-
-<script>
-
-</script>
